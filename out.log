@@ -1,0 +1,665 @@
+2021-04-29 07:17:07,977 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id:path>/messages     POST                           add_message
+/conversations/<conversation_id:path>/tracker/events POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id:path>/execute      POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id:path>/predict      POST                           predict
+/conversations/<conversation_id:path>/tracker/events PUT                            replace_events
+/conversations/<conversation_id:path>/story        GET                            retrieve_story
+/conversations/<conversation_id:path>/tracker      GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id:path>/trigger_intent POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2021-04-29 07:17:07,981 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-04-29 07:17:07,981 [DEBUG]  Using the default number of Sanic workers (1).
+2021-04-29 07:17:08,002 [INFO ]  Loading model models\20210428-141051.tar.gz...
+2021-04-29 07:17:08,484 [DEBUG]  Extracted model to 'C:\Users\a0230166\AppData\Local\Temp\tmpr5fleosc'.
+2021-04-29 07:17:08,594 [DEBUG]  Starting new HTTPS connection (1): api.segment.io:443
+2021-04-29 07:17:10,815 [DEBUG]  https://api.segment.io:443 "POST /v1/track HTTP/1.1" 200 21
+2021-04-29 07:17:10,830 [INFO ]  Enabling coroutine debugging. Loop id 1229486302208.
+2021-04-29 07:17:10,832 [INFO ]  Loading model models\20210428-141051.tar.gz...
+2021-04-29 07:17:11,361 [DEBUG]  Extracted model to 'C:\Users\a0230166\AppData\Local\Temp\tmp5temm79k'.
+2021-04-29 07:17:11,970 [DEBUG]  Loading the model from C:\Users\a0230166\AppData\Local\Temp\tmp5temm79k\nlu\component_5_DIETClassifier.tf_model with finetune_mode=False...
+2021-04-29 07:17:12,132 [DEBUG]  Following metrics will be logged during training: 
+2021-04-29 07:17:12,132 [DEBUG]    t_loss (total loss)
+2021-04-29 07:17:12,133 [DEBUG]    i_acc (intent acc)
+2021-04-29 07:17:12,134 [DEBUG]    i_loss (intent loss)
+2021-04-29 07:17:24,443 [DEBUG]  Finished loading the model.
+2021-04-29 07:17:24,447 [DEBUG]  Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path 'C:\Users\a0230166\AppData\Local\Temp\tmp5temm79k\nlu' doesn't exist?
+2021-04-29 07:17:24,517 [DEBUG]  Connected to InMemoryTrackerStore.
+2021-04-29 07:17:24,517 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2021-04-29 07:17:25,010 [DEBUG]  Extracted model to 'C:\Users\a0230166\AppData\Local\Temp\tmp6o9r_5b1'.
+2021-04-29 07:17:25,071 [DEBUG]  Loading the model from C:\Users\a0230166\AppData\Local\Temp\tmp6o9r_5b1\core\policy_1_TEDPolicy\ted_policy.tf_model with finetune_mode=False...
+2021-04-29 07:17:35,475 [DEBUG]  Finished loading the model.
+2021-04-29 07:17:35,486 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2021-04-29 07:17:35,486 [INFO ]  Rasa server is up and running.
+2021-04-29 07:20:24,676 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id:path>/messages     POST                           add_message
+/conversations/<conversation_id:path>/tracker/events POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id:path>/execute      POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id:path>/predict      POST                           predict
+/conversations/<conversation_id:path>/tracker/events PUT                            replace_events
+/conversations/<conversation_id:path>/story        GET                            retrieve_story
+/conversations/<conversation_id:path>/tracker      GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id:path>/trigger_intent POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2021-04-29 07:20:24,682 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-04-29 07:20:24,684 [DEBUG]  Using the default number of Sanic workers (1).
+2021-04-29 07:20:24,713 [INFO ]  Loading model models\20210428-141051.tar.gz...
+2021-04-29 07:20:25,194 [DEBUG]  Extracted model to 'C:\Users\a0230166\AppData\Local\Temp\tmp3jmho6l_'.
+2021-04-29 07:20:25,301 [DEBUG]  Starting new HTTPS connection (1): api.segment.io:443
+2021-04-29 07:20:27,427 [DEBUG]  https://api.segment.io:443 "POST /v1/track HTTP/1.1" 200 21
+2021-04-29 07:20:27,440 [INFO ]  Enabling coroutine debugging. Loop id 2001267775752.
+2021-04-29 07:20:27,442 [INFO ]  Loading model models\20210428-141051.tar.gz...
+2021-04-29 07:20:27,926 [DEBUG]  Extracted model to 'C:\Users\a0230166\AppData\Local\Temp\tmpdrddmo83'.
+2021-04-29 07:20:28,535 [DEBUG]  Loading the model from C:\Users\a0230166\AppData\Local\Temp\tmpdrddmo83\nlu\component_5_DIETClassifier.tf_model with finetune_mode=False...
+2021-04-29 07:20:28,688 [DEBUG]  Following metrics will be logged during training: 
+2021-04-29 07:20:28,688 [DEBUG]    t_loss (total loss)
+2021-04-29 07:20:28,689 [DEBUG]    i_acc (intent acc)
+2021-04-29 07:20:28,689 [DEBUG]    i_loss (intent loss)
+2021-04-29 07:20:40,822 [DEBUG]  Finished loading the model.
+2021-04-29 07:20:40,825 [DEBUG]  Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path 'C:\Users\a0230166\AppData\Local\Temp\tmpdrddmo83\nlu' doesn't exist?
+2021-04-29 07:20:40,897 [DEBUG]  Connected to InMemoryTrackerStore.
+2021-04-29 07:20:40,898 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2021-04-29 07:20:41,373 [DEBUG]  Extracted model to 'C:\Users\a0230166\AppData\Local\Temp\tmpr488iul5'.
+2021-04-29 07:20:41,432 [DEBUG]  Loading the model from C:\Users\a0230166\AppData\Local\Temp\tmpr488iul5\core\policy_1_TEDPolicy\ted_policy.tf_model with finetune_mode=False...
+2021-04-29 07:20:56,740 [DEBUG]  Finished loading the model.
+2021-04-29 07:20:56,750 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2021-04-29 07:20:56,751 [INFO ]  Rasa server is up and running.
+2021-04-29 07:58:00,768 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id:path>/messages     POST                           add_message
+/conversations/<conversation_id:path>/tracker/events POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id:path>/execute      POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id:path>/predict      POST                           predict
+/conversations/<conversation_id:path>/tracker/events PUT                            replace_events
+/conversations/<conversation_id:path>/story        GET                            retrieve_story
+/conversations/<conversation_id:path>/tracker      GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id:path>/trigger_intent POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2021-04-29 07:58:00,773 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-04-29 07:58:00,774 [DEBUG]  Using the default number of Sanic workers (1).
+2021-04-29 07:58:00,795 [INFO ]  Loading model models\20210428-141051.tar.gz...
+2021-04-29 07:58:01,333 [DEBUG]  Extracted model to 'C:\Users\a0230166\AppData\Local\Temp\tmpwgdxrswd'.
+2021-04-29 07:58:01,427 [DEBUG]  Starting new HTTPS connection (1): api.segment.io:443
+2021-04-29 07:58:03,593 [DEBUG]  https://api.segment.io:443 "POST /v1/track HTTP/1.1" 200 21
+2021-04-29 07:58:03,614 [INFO ]  Enabling coroutine debugging. Loop id 1698986318088.
+2021-04-29 07:58:03,618 [INFO ]  Loading model models\20210428-141051.tar.gz...
+2021-04-29 07:58:04,228 [DEBUG]  Extracted model to 'C:\Users\a0230166\AppData\Local\Temp\tmp4vej0610'.
+2021-04-29 07:58:05,349 [DEBUG]  Loading the model from C:\Users\a0230166\AppData\Local\Temp\tmp4vej0610\nlu\component_5_DIETClassifier.tf_model with finetune_mode=False...
+2021-04-29 07:58:05,507 [DEBUG]  Following metrics will be logged during training: 
+2021-04-29 07:58:05,508 [DEBUG]    t_loss (total loss)
+2021-04-29 07:58:05,508 [DEBUG]    i_acc (intent acc)
+2021-04-29 07:58:05,509 [DEBUG]    i_loss (intent loss)
+2021-04-29 07:58:25,917 [DEBUG]  Finished loading the model.
+2021-04-29 07:58:25,923 [DEBUG]  Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path 'C:\Users\a0230166\AppData\Local\Temp\tmp4vej0610\nlu' doesn't exist?
+2021-04-29 07:58:26,032 [DEBUG]  Connected to InMemoryTrackerStore.
+2021-04-29 07:58:26,033 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2021-04-29 07:58:26,703 [DEBUG]  Extracted model to 'C:\Users\a0230166\AppData\Local\Temp\tmpa706b34o'.
+2021-04-29 07:58:26,786 [DEBUG]  Loading the model from C:\Users\a0230166\AppData\Local\Temp\tmpa706b34o\core\policy_1_TEDPolicy\ted_policy.tf_model with finetune_mode=False...
+2021-04-29 07:58:39,629 [DEBUG]  Finished loading the model.
+2021-04-29 07:58:39,650 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2021-04-29 07:58:39,653 [INFO ]  Rasa server is up and running.
+2021-04-29 08:01:21,429 [DEBUG]  Issuing ticket for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:21,429 [DEBUG]  Acquiring lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:21,431 [DEBUG]  Acquired lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:21,433 [DEBUG]  Could not find tracker for conversation ID '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:21,434 [DEBUG]  Starting a new session for conversation ID '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:21,450 [DEBUG]  Policy prediction ended with events '[]'.
+2021-04-29 08:01:21,453 [DEBUG]  Action 'action_session_start' ended with events '[<rasa.shared.core.events.SessionStarted object at 0x0000018BA69340F0>, ActionExecuted(action: action_listen, policy: None, confidence: None)]'.
+2021-04-29 08:01:21,454 [DEBUG]  Current slot values: 
+	session_started_metadata: None
+2021-04-29 08:01:21,756 [DEBUG]  There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2021-04-29 08:01:21,757 [DEBUG]  Adding following selector key to message property: default
+2021-04-29 08:01:21,757 [DEBUG]  Received user message 'Hi' with intent '{'id': 2017660320849620276, 'name': 'greet', 'confidence': 0.99994957447052}' and entities '[]'
+2021-04-29 08:01:21,758 [DEBUG]  Logged UserUtterance - tracker now has 4 events.
+2021-04-29 08:01:21,760 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+2021-04-29 08:01:21,762 [DEBUG]  There is a memorised next action 'utter_greet'
+2021-04-29 08:01:21,774 [DEBUG]  TED predicted 'utter_greet' based on user intent.
+2021-04-29 08:01:21,774 [DEBUG]  Current tracker state:
+[state 1] user text: Hi | previous action name: action_listen
+2021-04-29 08:01:21,775 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:21,776 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+2021-04-29 08:01:21,777 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:21,778 [DEBUG]  Made prediction using user intent.
+2021-04-29 08:01:21,778 [DEBUG]  Added `DefinePrevUserUtteredFeaturization(False)` event.
+2021-04-29 08:01:21,781 [DEBUG]  Predicted next action using policy_0_MemoizationPolicy.
+2021-04-29 08:01:21,782 [DEBUG]  Predicted next action 'utter_greet' with confidence 1.00.
+2021-04-29 08:01:21,786 [DEBUG]  Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x0000018BA6934240>]'.
+2021-04-29 08:01:21,793 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hey! How are you?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_greet"}, 1619663481.7868555)]'.
+2021-04-29 08:01:21,794 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+2021-04-29 08:01:21,796 [DEBUG]  There is a memorised next action 'action_listen'
+2021-04-29 08:01:21,808 [DEBUG]  TED predicted 'action_listen' based on user intent.
+2021-04-29 08:01:21,813 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+2021-04-29 08:01:21,816 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:21,817 [DEBUG]  Predicted next action using policy_0_MemoizationPolicy.
+2021-04-29 08:01:21,818 [DEBUG]  Predicted next action 'action_listen' with confidence 1.00.
+2021-04-29 08:01:21,823 [DEBUG]  Policy prediction ended with events '[]'.
+2021-04-29 08:01:21,824 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2021-04-29 08:01:21,830 [DEBUG]  Deleted lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:30,326 [DEBUG]  Issuing ticket for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:30,326 [DEBUG]  Acquiring lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:30,328 [DEBUG]  Acquired lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:30,330 [DEBUG]  Recreating tracker for id '59c6774d-4a15-4511-8565-cda8baf55b89'
+2021-04-29 08:01:30,349 [DEBUG]  There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2021-04-29 08:01:30,350 [DEBUG]  Adding following selector key to message property: default
+2021-04-29 08:01:30,351 [DEBUG]  Received user message 'Hello' with intent '{'id': 2017660320849620276, 'name': 'greet', 'confidence': 0.9999803304672241}' and entities '[]'
+2021-04-29 08:01:30,353 [DEBUG]  Logged UserUtterance - tracker now has 9 events.
+2021-04-29 08:01:30,354 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+2021-04-29 08:01:30,356 [DEBUG]  There is no memorised next action
+2021-04-29 08:01:30,378 [DEBUG]  TED predicted 'utter_greet' based on user intent.
+2021-04-29 08:01:30,381 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user text: Hello | previous action name: action_listen
+2021-04-29 08:01:30,382 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:30,383 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+2021-04-29 08:01:30,385 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:30,386 [DEBUG]  Made prediction using user intent.
+2021-04-29 08:01:30,387 [DEBUG]  Added `DefinePrevUserUtteredFeaturization(False)` event.
+2021-04-29 08:01:30,388 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:01:30,388 [DEBUG]  Predicted next action 'utter_greet' with confidence 0.97.
+2021-04-29 08:01:30,393 [DEBUG]  Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x0000018B9F6D4860>]'.
+2021-04-29 08:01:30,394 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hey! How are you?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_greet"}, 1619663490.3933632)]'.
+2021-04-29 08:01:30,396 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+2021-04-29 08:01:30,397 [DEBUG]  There is no memorised next action
+2021-04-29 08:01:30,413 [DEBUG]  TED predicted 'action_listen' based on user intent.
+2021-04-29 08:01:30,416 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+2021-04-29 08:01:30,417 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:30,419 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:01:30,419 [DEBUG]  Predicted next action 'action_listen' with confidence 0.99.
+2021-04-29 08:01:30,420 [DEBUG]  Policy prediction ended with events '[]'.
+2021-04-29 08:01:30,420 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2021-04-29 08:01:30,422 [DEBUG]  Deleted lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:31,413 [DEBUG]  Issuing ticket for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:31,413 [DEBUG]  Acquiring lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:31,414 [DEBUG]  Acquired lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:31,415 [DEBUG]  Recreating tracker for id '59c6774d-4a15-4511-8565-cda8baf55b89'
+2021-04-29 08:01:31,427 [DEBUG]  There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2021-04-29 08:01:31,428 [DEBUG]  Adding following selector key to message property: default
+2021-04-29 08:01:31,428 [DEBUG]  Received user message 'Hello' with intent '{'id': 2017660320849620276, 'name': 'greet', 'confidence': 0.9999803304672241}' and entities '[]'
+2021-04-29 08:01:31,429 [DEBUG]  Logged UserUtterance - tracker now has 14 events.
+2021-04-29 08:01:31,431 [DEBUG]  Current tracker state:
+[state 0] user intent: greet | previous action name: action_listen
+[state 1] user intent: greet | previous action name: utter_greet
+[state 2] user intent: greet | previous action name: action_listen
+[state 3] user intent: greet | previous action name: utter_greet
+[state 4] user intent: greet | previous action name: action_listen
+2021-04-29 08:01:31,432 [DEBUG]  There is no memorised next action
+2021-04-29 08:01:31,441 [DEBUG]  TED predicted 'utter_greet' based on user intent.
+2021-04-29 08:01:31,443 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user text: Hello | previous action name: action_listen
+2021-04-29 08:01:31,445 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:31,446 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+2021-04-29 08:01:31,447 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:31,448 [DEBUG]  Made prediction using user intent.
+2021-04-29 08:01:31,449 [DEBUG]  Added `DefinePrevUserUtteredFeaturization(False)` event.
+2021-04-29 08:01:31,450 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:01:31,451 [DEBUG]  Predicted next action 'utter_greet' with confidence 0.97.
+2021-04-29 08:01:31,451 [DEBUG]  Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x0000018BA68A6748>]'.
+2021-04-29 08:01:31,452 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hey! How are you?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_greet"}, 1619663491.451245)]'.
+2021-04-29 08:01:31,455 [DEBUG]  Current tracker state:
+[state 0] user intent: greet | previous action name: utter_greet
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+2021-04-29 08:01:31,460 [DEBUG]  There is no memorised next action
+2021-04-29 08:01:31,470 [DEBUG]  TED predicted 'action_listen' based on user intent.
+2021-04-29 08:01:31,471 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+2021-04-29 08:01:31,472 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:31,473 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:01:31,474 [DEBUG]  Predicted next action 'action_listen' with confidence 0.99.
+2021-04-29 08:01:31,476 [DEBUG]  Policy prediction ended with events '[]'.
+2021-04-29 08:01:31,477 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2021-04-29 08:01:31,480 [DEBUG]  Deleted lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:47,943 [DEBUG]  Issuing ticket for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:47,944 [DEBUG]  Acquiring lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:47,945 [DEBUG]  Acquired lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:47,946 [DEBUG]  Recreating tracker for id '59c6774d-4a15-4511-8565-cda8baf55b89'
+2021-04-29 08:01:47,969 [DEBUG]  There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2021-04-29 08:01:47,970 [DEBUG]  Adding following selector key to message property: default
+2021-04-29 08:01:47,971 [DEBUG]  Received user message 'hi' with intent '{'id': 2017660320849620276, 'name': 'greet', 'confidence': 0.9999544620513916}' and entities '[]'
+2021-04-29 08:01:47,973 [DEBUG]  Logged UserUtterance - tracker now has 19 events.
+2021-04-29 08:01:47,981 [DEBUG]  Current tracker state:
+[state 0] user intent: greet | previous action name: action_listen
+[state 1] user intent: greet | previous action name: utter_greet
+[state 2] user intent: greet | previous action name: action_listen
+[state 3] user intent: greet | previous action name: utter_greet
+[state 4] user intent: greet | previous action name: action_listen
+2021-04-29 08:01:47,985 [DEBUG]  There is no memorised next action
+2021-04-29 08:01:48,004 [DEBUG]  TED predicted 'utter_greet' based on user intent.
+2021-04-29 08:01:48,014 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user text: hi | previous action name: action_listen
+2021-04-29 08:01:48,016 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:48,017 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+2021-04-29 08:01:48,018 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:48,020 [DEBUG]  Made prediction using user intent.
+2021-04-29 08:01:48,020 [DEBUG]  Added `DefinePrevUserUtteredFeaturization(False)` event.
+2021-04-29 08:01:48,021 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:01:48,022 [DEBUG]  Predicted next action 'utter_greet' with confidence 0.97.
+2021-04-29 08:01:48,027 [DEBUG]  Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x0000018BA69340F0>]'.
+2021-04-29 08:01:48,029 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hey! How are you?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_greet"}, 1619663508.027917)]'.
+2021-04-29 08:01:48,031 [DEBUG]  Current tracker state:
+[state 0] user intent: greet | previous action name: utter_greet
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+2021-04-29 08:01:48,032 [DEBUG]  There is no memorised next action
+2021-04-29 08:01:48,041 [DEBUG]  TED predicted 'action_listen' based on user intent.
+2021-04-29 08:01:48,043 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+2021-04-29 08:01:48,045 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:48,048 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:01:48,049 [DEBUG]  Predicted next action 'action_listen' with confidence 0.99.
+2021-04-29 08:01:48,050 [DEBUG]  Policy prediction ended with events '[]'.
+2021-04-29 08:01:48,051 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2021-04-29 08:01:48,053 [DEBUG]  Deleted lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:56,892 [DEBUG]  Issuing ticket for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:56,895 [DEBUG]  Acquiring lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:56,902 [DEBUG]  Acquired lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:01:56,907 [DEBUG]  Recreating tracker for id '59c6774d-4a15-4511-8565-cda8baf55b89'
+2021-04-29 08:01:56,953 [DEBUG]  There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2021-04-29 08:01:56,955 [DEBUG]  Adding following selector key to message property: default
+2021-04-29 08:01:56,956 [DEBUG]  The difference in NLU confidences for the top two intents (0.01539561152458191) is lower than the ambiguity threshold 0.10. Predicting intent 'nlu_fallback' instead of 'deny'.
+2021-04-29 08:01:56,957 [DEBUG]  Received user message 'Ok' with intent '{'name': 'nlu_fallback', 'confidence': 0.578830748796463}' and entities '[]'
+2021-04-29 08:01:56,961 [DEBUG]  Logged UserUtterance - tracker now has 24 events.
+2021-04-29 08:01:56,965 [DEBUG]  Current tracker state:
+[state 0] user intent: greet | previous action name: action_listen
+[state 1] user intent: greet | previous action name: utter_greet
+[state 2] user intent: greet | previous action name: action_listen
+[state 3] user intent: greet | previous action name: utter_greet
+[state 4] user intent: nlu_fallback | previous action name: action_listen
+2021-04-29 08:01:56,972 [DEBUG]  There is no memorised next action
+2021-04-29 08:01:57,025 [DEBUG]  TED predicted 'utter_happy' based on user intent.
+2021-04-29 08:01:57,028 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user text: Ok | previous action name: action_listen
+2021-04-29 08:01:57,034 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:57,046 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user intent: nlu_fallback | previous action name: action_listen
+2021-04-29 08:01:57,053 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:57,056 [DEBUG]  Made prediction using user intent.
+2021-04-29 08:01:57,058 [DEBUG]  Added `DefinePrevUserUtteredFeaturization(False)` event.
+2021-04-29 08:01:57,060 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:01:57,078 [DEBUG]  Predicted next action 'utter_happy' with confidence 0.67.
+2021-04-29 08:01:57,082 [DEBUG]  Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x0000018B9F4FE9E8>]'.
+2021-04-29 08:01:57,089 [DEBUG]  Action 'utter_happy' ended with events '[BotUttered('Great, carry on!', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_happy"}, 1619663517.082519)]'.
+2021-04-29 08:01:57,104 [DEBUG]  Current tracker state:
+[state 0] user intent: greet | previous action name: utter_greet
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: nlu_fallback | previous action name: action_listen
+[state 4] user intent: nlu_fallback | previous action name: utter_happy
+2021-04-29 08:01:57,107 [DEBUG]  There is no memorised next action
+2021-04-29 08:01:57,154 [DEBUG]  TED predicted 'action_listen' based on user intent.
+2021-04-29 08:01:57,159 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user intent: nlu_fallback | previous action name: action_listen
+[state 10] user intent: nlu_fallback | previous action name: utter_happy
+2021-04-29 08:01:57,177 [DEBUG]  There is no applicable rule.
+2021-04-29 08:01:57,180 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:01:57,186 [DEBUG]  Predicted next action 'action_listen' with confidence 0.99.
+2021-04-29 08:01:57,191 [DEBUG]  Policy prediction ended with events '[]'.
+2021-04-29 08:01:57,197 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2021-04-29 08:01:57,214 [DEBUG]  Deleted lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:01,681 [DEBUG]  Issuing ticket for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:01,682 [DEBUG]  Acquiring lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:01,683 [DEBUG]  Acquired lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:01,684 [DEBUG]  Recreating tracker for id '59c6774d-4a15-4511-8565-cda8baf55b89'
+2021-04-29 08:02:01,710 [DEBUG]  There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2021-04-29 08:02:01,711 [DEBUG]  Adding following selector key to message property: default
+2021-04-29 08:02:01,712 [DEBUG]  Received user message 'need hlep' with intent '{'id': -7220193810956364742, 'name': 'affirm', 'confidence': 0.49025750160217285}' and entities '[]'
+2021-04-29 08:02:01,713 [DEBUG]  Logged UserUtterance - tracker now has 29 events.
+2021-04-29 08:02:01,715 [DEBUG]  Current tracker state:
+[state 0] user intent: greet | previous action name: action_listen
+[state 1] user intent: greet | previous action name: utter_greet
+[state 2] user intent: nlu_fallback | previous action name: action_listen
+[state 3] user intent: nlu_fallback | previous action name: utter_happy
+[state 4] user intent: affirm | previous action name: action_listen
+2021-04-29 08:02:01,716 [DEBUG]  There is no memorised next action
+2021-04-29 08:02:01,737 [DEBUG]  TED predicted 'utter_happy' based on user intent.
+2021-04-29 08:02:01,742 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user intent: nlu_fallback | previous action name: action_listen
+[state 10] user intent: nlu_fallback | previous action name: utter_happy
+[state 11] user text: need hlep | previous action name: action_listen
+2021-04-29 08:02:01,750 [DEBUG]  There is no applicable rule.
+2021-04-29 08:02:01,753 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user intent: nlu_fallback | previous action name: action_listen
+[state 10] user intent: nlu_fallback | previous action name: utter_happy
+[state 11] user intent: affirm | previous action name: action_listen
+2021-04-29 08:02:01,756 [DEBUG]  There is no applicable rule.
+2021-04-29 08:02:01,757 [DEBUG]  Made prediction using user intent.
+2021-04-29 08:02:01,758 [DEBUG]  Added `DefinePrevUserUtteredFeaturization(False)` event.
+2021-04-29 08:02:01,759 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:02:01,760 [DEBUG]  Predicted next action 'utter_happy' with confidence 0.96.
+2021-04-29 08:02:01,763 [DEBUG]  Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x0000018B9F4B2A90>]'.
+2021-04-29 08:02:01,765 [DEBUG]  Action 'utter_happy' ended with events '[BotUttered('Great, carry on!', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_happy"}, 1619663521.763122)]'.
+2021-04-29 08:02:01,769 [DEBUG]  Current tracker state:
+[state 0] user intent: greet | previous action name: utter_greet
+[state 1] user intent: nlu_fallback | previous action name: action_listen
+[state 2] user intent: nlu_fallback | previous action name: utter_happy
+[state 3] user intent: affirm | previous action name: action_listen
+[state 4] user intent: affirm | previous action name: utter_happy
+2021-04-29 08:02:01,770 [DEBUG]  There is no memorised next action
+2021-04-29 08:02:01,782 [DEBUG]  TED predicted 'action_listen' based on user intent.
+2021-04-29 08:02:01,784 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user intent: nlu_fallback | previous action name: action_listen
+[state 10] user intent: nlu_fallback | previous action name: utter_happy
+[state 11] user intent: affirm | previous action name: action_listen
+[state 12] user intent: affirm | previous action name: utter_happy
+2021-04-29 08:02:01,785 [DEBUG]  There is no applicable rule.
+2021-04-29 08:02:01,786 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:02:01,786 [DEBUG]  Predicted next action 'action_listen' with confidence 0.99.
+2021-04-29 08:02:01,789 [DEBUG]  Policy prediction ended with events '[]'.
+2021-04-29 08:02:01,802 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2021-04-29 08:02:01,807 [DEBUG]  Deleted lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:49,658 [DEBUG]  Issuing ticket for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:49,660 [DEBUG]  Acquiring lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:49,660 [DEBUG]  Acquired lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:49,662 [DEBUG]  Recreating tracker for id '59c6774d-4a15-4511-8565-cda8baf55b89'
+2021-04-29 08:02:49,685 [DEBUG]  There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2021-04-29 08:02:49,686 [DEBUG]  Adding following selector key to message property: default
+2021-04-29 08:02:49,688 [DEBUG]  Received user message 'hi' with intent '{'id': 2017660320849620276, 'name': 'greet', 'confidence': 0.9999544620513916}' and entities '[]'
+2021-04-29 08:02:49,690 [DEBUG]  Logged UserUtterance - tracker now has 34 events.
+2021-04-29 08:02:49,693 [DEBUG]  Current tracker state:
+[state 0] user intent: nlu_fallback | previous action name: action_listen
+[state 1] user intent: nlu_fallback | previous action name: utter_happy
+[state 2] user intent: affirm | previous action name: action_listen
+[state 3] user intent: affirm | previous action name: utter_happy
+[state 4] user intent: greet | previous action name: action_listen
+2021-04-29 08:02:49,694 [DEBUG]  There is no memorised next action
+2021-04-29 08:02:49,730 [DEBUG]  TED predicted 'utter_greet' based on user intent.
+2021-04-29 08:02:49,745 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user intent: nlu_fallback | previous action name: action_listen
+[state 10] user intent: nlu_fallback | previous action name: utter_happy
+[state 11] user intent: affirm | previous action name: action_listen
+[state 12] user intent: affirm | previous action name: utter_happy
+[state 13] user text: hi | previous action name: action_listen
+2021-04-29 08:02:49,747 [DEBUG]  There is no applicable rule.
+2021-04-29 08:02:49,752 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user intent: nlu_fallback | previous action name: action_listen
+[state 10] user intent: nlu_fallback | previous action name: utter_happy
+[state 11] user intent: affirm | previous action name: action_listen
+[state 12] user intent: affirm | previous action name: utter_happy
+[state 13] user intent: greet | previous action name: action_listen
+2021-04-29 08:02:49,760 [DEBUG]  There is no applicable rule.
+2021-04-29 08:02:49,762 [DEBUG]  Made prediction using user intent.
+2021-04-29 08:02:49,763 [DEBUG]  Added `DefinePrevUserUtteredFeaturization(False)` event.
+2021-04-29 08:02:49,778 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:02:49,779 [DEBUG]  Predicted next action 'utter_greet' with confidence 0.96.
+2021-04-29 08:02:49,780 [DEBUG]  Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x0000018BA68A64E0>]'.
+2021-04-29 08:02:49,781 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hey! How are you?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_greet"}, 1619663569.7809377)]'.
+2021-04-29 08:02:49,783 [DEBUG]  Current tracker state:
+[state 0] user intent: nlu_fallback | previous action name: utter_happy
+[state 1] user intent: affirm | previous action name: action_listen
+[state 2] user intent: affirm | previous action name: utter_happy
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+2021-04-29 08:02:49,788 [DEBUG]  There is no memorised next action
+2021-04-29 08:02:49,800 [DEBUG]  TED predicted 'action_listen' based on user intent.
+2021-04-29 08:02:49,803 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user intent: nlu_fallback | previous action name: action_listen
+[state 10] user intent: nlu_fallback | previous action name: utter_happy
+[state 11] user intent: affirm | previous action name: action_listen
+[state 12] user intent: affirm | previous action name: utter_happy
+[state 13] user intent: greet | previous action name: action_listen
+[state 14] user intent: greet | previous action name: utter_greet
+2021-04-29 08:02:49,805 [DEBUG]  There is no applicable rule.
+2021-04-29 08:02:49,808 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:02:49,814 [DEBUG]  Predicted next action 'action_listen' with confidence 0.99.
+2021-04-29 08:02:49,816 [DEBUG]  Policy prediction ended with events '[]'.
+2021-04-29 08:02:49,816 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2021-04-29 08:02:49,821 [DEBUG]  Deleted lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:55,436 [DEBUG]  Issuing ticket for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:55,438 [DEBUG]  Acquiring lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:55,439 [DEBUG]  Acquired lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
+2021-04-29 08:02:55,443 [DEBUG]  Recreating tracker for id '59c6774d-4a15-4511-8565-cda8baf55b89'
+2021-04-29 08:02:55,484 [DEBUG]  There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2021-04-29 08:02:55,486 [DEBUG]  Adding following selector key to message property: default
+2021-04-29 08:02:55,487 [DEBUG]  Received user message 'i need help' with intent '{'id': 2017660320849620276, 'name': 'greet', 'confidence': 0.9395895004272461}' and entities '[]'
+2021-04-29 08:02:55,489 [DEBUG]  Logged UserUtterance - tracker now has 39 events.
+2021-04-29 08:02:55,494 [DEBUG]  Current tracker state:
+[state 0] user intent: affirm | previous action name: action_listen
+[state 1] user intent: affirm | previous action name: utter_happy
+[state 2] user intent: greet | previous action name: action_listen
+[state 3] user intent: greet | previous action name: utter_greet
+[state 4] user intent: greet | previous action name: action_listen
+2021-04-29 08:02:55,522 [DEBUG]  There is no memorised next action
+2021-04-29 08:02:55,547 [DEBUG]  TED predicted 'utter_greet' based on user intent.
+2021-04-29 08:02:55,549 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user intent: nlu_fallback | previous action name: action_listen
+[state 10] user intent: nlu_fallback | previous action name: utter_happy
+[state 11] user intent: affirm | previous action name: action_listen
+[state 12] user intent: affirm | previous action name: utter_happy
+[state 13] user intent: greet | previous action name: action_listen
+[state 14] user intent: greet | previous action name: utter_greet
+[state 15] user text: i need help | previous action name: action_listen
+2021-04-29 08:02:55,550 [DEBUG]  There is no applicable rule.
+2021-04-29 08:02:55,552 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user intent: nlu_fallback | previous action name: action_listen
+[state 10] user intent: nlu_fallback | previous action name: utter_happy
+[state 11] user intent: affirm | previous action name: action_listen
+[state 12] user intent: affirm | previous action name: utter_happy
+[state 13] user intent: greet | previous action name: action_listen
+[state 14] user intent: greet | previous action name: utter_greet
+[state 15] user intent: greet | previous action name: action_listen
+2021-04-29 08:02:55,555 [DEBUG]  There is no applicable rule.
+2021-04-29 08:02:55,570 [DEBUG]  Made prediction using user intent.
+2021-04-29 08:02:55,571 [DEBUG]  Added `DefinePrevUserUtteredFeaturization(False)` event.
+2021-04-29 08:02:55,571 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:02:55,571 [DEBUG]  Predicted next action 'utter_greet' with confidence 0.97.
+2021-04-29 08:02:55,572 [DEBUG]  Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x0000018BA68580B8>]'.
+2021-04-29 08:02:55,573 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hey! How are you?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_greet"}, 1619663575.5727408)]'.
+2021-04-29 08:02:55,580 [DEBUG]  Current tracker state:
+[state 0] user intent: affirm | previous action name: utter_happy
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+2021-04-29 08:02:55,581 [DEBUG]  There is no memorised next action
+2021-04-29 08:02:55,597 [DEBUG]  TED predicted 'action_listen' based on user intent.
+2021-04-29 08:02:55,599 [DEBUG]  Current tracker state:
+[state 1] user intent: greet | previous action name: action_listen
+[state 2] user intent: greet | previous action name: utter_greet
+[state 3] user intent: greet | previous action name: action_listen
+[state 4] user intent: greet | previous action name: utter_greet
+[state 5] user intent: greet | previous action name: action_listen
+[state 6] user intent: greet | previous action name: utter_greet
+[state 7] user intent: greet | previous action name: action_listen
+[state 8] user intent: greet | previous action name: utter_greet
+[state 9] user intent: nlu_fallback | previous action name: action_listen
+[state 10] user intent: nlu_fallback | previous action name: utter_happy
+[state 11] user intent: affirm | previous action name: action_listen
+[state 12] user intent: affirm | previous action name: utter_happy
+[state 13] user intent: greet | previous action name: action_listen
+[state 14] user intent: greet | previous action name: utter_greet
+[state 15] user intent: greet | previous action name: action_listen
+[state 16] user intent: greet | previous action name: utter_greet
+2021-04-29 08:02:55,601 [DEBUG]  There is no applicable rule.
+2021-04-29 08:02:55,601 [DEBUG]  Predicted next action using policy_1_TEDPolicy.
+2021-04-29 08:02:55,602 [DEBUG]  Predicted next action 'action_listen' with confidence 0.99.
+2021-04-29 08:02:55,603 [DEBUG]  Policy prediction ended with events '[]'.
+2021-04-29 08:02:55,603 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2021-04-29 08:02:55,605 [DEBUG]  Deleted lock for conversation '59c6774d-4a15-4511-8565-cda8baf55b89'.
